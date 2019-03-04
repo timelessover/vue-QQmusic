@@ -7,7 +7,7 @@
 			</router-link>
 		</div>
 		<div class="nav">
-			<router-link to="/recommend" class="nav-item">推荐</router-link>
+			<router-link to="/index" class="nav-item">推荐</router-link>
 			<router-link to="/singerlist" class="nav-item">歌手</router-link>
 			<router-link to="/toplists" class="nav-item">排行榜</router-link>
 			<router-link to="/search" class="nav-item">搜索</router-link>
