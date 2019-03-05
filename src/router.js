@@ -16,41 +16,41 @@ export default new Router({
       children:[
         {
           path:"/index/songsheet",
-          // component:HotSongSheet
+          component: () => import('./views/HotSongSheet.vue')
         }
       ]
     },
     {
       path:'/singerlist',
-      component: () => import('./views/SIngerlist.vue'),
+      component: () => import('./views/Singerlist.vue'),
       children:[
         {
           path:'/singerlist/singer/:id',
-          // component:() => import('./view/Singer.vue')
+          component:() => import('./view/Singer.vue')
         }
       ]
     },
     {
       path:'/toplists',
-      // component:() => import('./view/')
+      component:() => import('./view/Toplists.vue'),
       children:[
         {
           path:'/toplists/toplist/:id',
-          // component:() => import('')
+          component:() => import('./views/Toplist.vue')
         }
       ]
     },
     {
       path:'/search',
-      // component:() => 
+      component:() => import('./views/Search.vue')
     },
     {
       path:'/album/:id',
-      // component:() => import('')
+      component:() => import('./views/Album.vue')
     },
     {
       path:'/user',
-      // component:() => import('')
+      component:() => import('./views/User.vue')
     }
   ]
 })
