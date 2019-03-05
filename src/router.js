@@ -26,13 +26,13 @@ export default new Router({
       children:[
         {
           path:'/singerlist/singer/:id',
-          component:() => import('./view/Singer.vue')
+          component:() => import('./views/Singer.vue')
         }
       ]
     },
     {
       path:'/toplists',
-      component:() => import('./view/Toplists.vue'),
+      component:() => import('./views/Toplists.vue'),
       children:[
         {
           path:'/toplists/toplist/:id',
