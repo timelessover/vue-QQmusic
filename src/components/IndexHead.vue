@@ -16,10 +16,7 @@
 </template>
 <script>
 	export default {
-		methods:{
-			goTo(){
-			}
-		}
+		
 	}
 </script>
 <style scoped lang="scss">

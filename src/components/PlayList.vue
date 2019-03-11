@@ -69,7 +69,7 @@
 		        if (newSong.id === oldSong.id) {
 					return
 		        }
-		        // this.scrollToCurrent()
+		       
 	      	}
 		},
 		methods:{
@@ -162,18 +162,8 @@
 			selectSong(index) {
 				this.setCurrentIndex(index)
 				this.setPlayingState(true)
-			},
-			// scrollToCurrent() {
-			// 	let height = this.currentIndex * 45
-			// 	//增加一个动画效果
-			// 	this.$refs.listMain.scrollTop += 15
-			//  	if (this.$refs.listMain.scrollTop < height) {
-			//  		//这个API的动画效果刷新效果最好，但是有兼容性问题
-   //                  var c=requestAnimationFrame(this.scrollToCurrent)
-   //              }else {
-   //                  cancelAnimationFrame(c);
-   //              }
-			// }
+			}
+			
 		}
 	}
 </script>

@@ -15,7 +15,7 @@ export function getHotKey(){
 }
 
 export function getSuggestion(value,page){
-	const url = 'https://c.y.qq.com/soso/fcgi-bin/search_for_qq_cp'
+	const url = `https://c.y.qq.com/soso/fcgi-bin/client_search_cp?aggr=1&cr=1&flag_qc=0&p=1&n=30&w=${value}`
 	const data = {
 		uin: 0,
 		format: 'jsonp',

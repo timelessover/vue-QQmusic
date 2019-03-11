@@ -21,7 +21,7 @@
 					<span>随机播放全部</span>
 				</div>
 				<ul class="list">
-					<li v-for="(item,index) in mylikeSongs" class="item" @click="selectItem(mylikeSongs,index,'mylikeSongs')">
+					<li v-for="(item,index) in mylikeSongs" :key="index" class="item" @click="selectItem(mylikeSongs,index,'mylikeSongs')">
 						<h3 v-html="item.songname" :class="active(item,'mylikeSongs')"></h3>
 						<p v-html="item.singername+'·'+item.albumname" :class="active(item,'mylikeSongs')"></p>
 						<span @click.stop="_removeItem('mylikeSongs',item,index)">×</span>
@@ -42,7 +42,7 @@
 					<span>随机播放全部</span>
 				</div>
 				<ul class="list">
-					<li v-for="(item,index) in playHistory" class="item" @click="selectItem(playHistory,index,'playHistory')">
+					<li v-for="(item,index) in playHistory" :key="index" class="item" @click="selectItem(playHistory,index,'playHistory')">
 						<h3 v-html="item.songname"  :class="active(item,'playHistory')"></h3>
 						<p v-html="item.singername+'·'+item.albumname"  :class="active(item,'playHistory')"></p>
 						<span @click.stop="_removeItem('playHistory',item,index)">×</span>
@@ -64,9 +64,6 @@
 			return {
 				selected:'mylikeSongs',
 			}
-		},
-		created(){
-			// console.log(this.playHistory)
 		},
 		computed:{
 			...mapState([

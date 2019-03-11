@@ -1,9 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import {
-  shuffle
-} from '@/assets/js/util'
-// import createLogger from 'vuex/dist/logger'
+import {shuffle} from '@/assets/js/util'
 
 Vue.use(Vuex)
 
@@ -40,42 +37,53 @@ export default new Vuex.Store({
 
 
   mutations: {
+    //播放状态
     setPlayingState(state, flag) {
       state.playing = flag
     },
+    //播放器全屏
     setFullScreenState(state, flag) {
       state.fullScreen = flag
     },
+    //播放列表
     setPlaylist(state, list) {
       //当setPlaylist和setSequencelist引用同一个list时，改变其中一个会影响另一个
       state.playlist = list
     },
+    //播放队列
     setSequencelist(state, list) {
       state.sequencelist = list
     },
+    //播放状态
     setModeState(state, mode) {
       state.mode = mode
     },
+    //当前播放的歌曲index
     setCurrentIndex(state, index) {
       state.currentIndex = index
     },
+    //其他设置
     setOther(state, option) {
       state.other = Object.assign(state.other, option)
     },
+    //加入添加播放记录和缓存
     addItem(state, payload) {
       //载荷传入key和song
       state[payload.key].push(payload.song)
       localStorage.setItem(payload.key, JSON.stringify(state[payload.key]))
     },
+    //加入缓存
     addItemPosition(state, payload) {
       state[payload.key].splice(payload.index, 0, payload.song)
       localStorage.setItem(payload.key, JSON.stringify(state[payload.key]))
     },
+    //删除缓存
     removeItem(state, payload) {
       //载荷传入key和index
       state[payload.key].splice(payload.index, 1)
       localStorage.setItem(payload.key, JSON.stringify(state[payload.key]))
     },
+    //清除列表
     clearList(state, key) {
       state[key] = []
       localStorage.setItem(key, JSON.stringify(state[key]))
@@ -103,9 +111,8 @@ export default new Vuex.Store({
       } else {
         commit('setPlaylist', list)
       }
-      commit('setCurrentIndex', index)
-      commit('setPlayingState', true)
+        commit('setCurrentIndex', index)
+        commit('setPlayingState', true)
     }
-  },
-  // plugins: debug ? [createLogger()] : []
+  }
 })

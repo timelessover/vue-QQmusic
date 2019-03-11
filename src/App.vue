@@ -1,8 +1,12 @@
 <template>
   <div id="app">
+    
     <Index-Head/>
-    <router-view/>
-    <player></player>
+    <transition name="fade" mode="out-in">
+       <router-view/>
+    </transition>
+    <player/>
+    
   </div>
 </template>
 
@@ -25,5 +29,14 @@ export default {
 //去除滚动条
 ::-webkit-scrollbar {
   display: none;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.2s ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 </style>

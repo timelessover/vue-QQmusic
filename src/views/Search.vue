@@ -92,6 +92,7 @@
 				this.pageNum = 1
 				getSuggestion(this.value,1).then((res)=>{
 					let data=res.data
+					console.log(data)
 					//清空上一次搜索建议
 					this.suggestionList = []
 					data.song.list.forEach((item)=>{
@@ -101,9 +102,7 @@
 						Object.assign(song,createSong(item))
 						this.suggestionList.push(song)
 					})
-					if (data.zhida.type!=0) {
-						this.suggestionList.unshift(data.zhida)
-					}
+				
 				})
 			}
 		},
@@ -149,11 +148,6 @@
 						this.suggestionList.push(song)
 					})
 				})
-				//为什么添加了下面一句话后没有loading状态？
-				// this.$refs.loadmore.onBottomLoaded()
-			},
-			test(a){
-				// console.log(a)
 			},
 			getHeight(){
 				let totalHeight = window.innerHeight;
@@ -164,12 +158,12 @@
 			getContent(item,tag){
 				//此函数是获取不同类型搜索建议的内容
 				switch (item.type) {
-					case 2 : 
-						if (tag === 'h3') {
-							return item.singername
-						}else {
-							return `单曲：${item.songnum} 专辑：${item.albumnum}`
-						}
+					// case 2 : 
+					// 	if (tag === 'h3') {
+					// 		return item.singername
+					// 	}else {
+					// 		return `单曲：${item.songnum} 专辑：${item.albumname}`
+					// 	}
 					case 3 : 
 						if (tag === 'h3') {
 							return item.albumname

@@ -39,7 +39,7 @@
 		line-height: 44px;
 		background-size: cover;
 		background-repeat: no-repeat;
-		/*background-color: #31c27c;*/
+		
 	}
 	.page-header::before{
 		content: "";
