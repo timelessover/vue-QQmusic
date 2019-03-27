@@ -1,7 +1,7 @@
 # 基于Vue-cli3重写vue-QQmusic
 
 
-项目预览地址：[Vue-QQmusic](https://timelessover.github.io/blog-share-cli3/dist/index.html#/)
+项目预览地址：[Vue-QQmusic](https://timelessover.github.io/vue-QQmusic/dist/index.html#/)
 
 
 二维码：
