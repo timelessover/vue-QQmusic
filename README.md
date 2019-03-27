@@ -34,13 +34,7 @@
 <br/>
 
 ### 项目截图
-![播放器](https://upload-images.jianshu.io/upload_images/8562733-df2f215053cf04ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
-
-![首页](https://upload-images.jianshu.io/upload_images/8562733-74adb508015b9db5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
-
-![歌手](https://upload-images.jianshu.io/upload_images/8562733-65623bce6f18fa6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
-
-![搜索](https://upload-images.jianshu.io/upload_images/8562733-9097bff9fd855c5f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
+![播放器](https://upload-images.jianshu.io/upload_images/8562733-df2f215053cf04ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)![首页](https://upload-images.jianshu.io/upload_images/8562733-74adb508015b9db5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)![歌手](https://upload-images.jianshu.io/upload_images/8562733-65623bce6f18fa6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)![搜索](https://upload-images.jianshu.io/upload_images/8562733-9097bff9fd855c5f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
 
 
 <br/>
