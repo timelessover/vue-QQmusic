@@ -3,6 +3,10 @@
 
 项目预览地址：[Vue-QQmusic](https://timelessover.github.io/blog-share-cli3/dist/index.html#/)
 二维码：
+
+
+
+
 ![](https://upload-images.jianshu.io/upload_images/8562733-157172662bba93c3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
 
