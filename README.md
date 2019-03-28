@@ -19,7 +19,7 @@
  - mint-ui
  - vue-cli3
  - scss
- - jonsp(跨域)
+ - jsonp(跨域)
 
 <br/>
 
