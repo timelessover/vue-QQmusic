@@ -29,7 +29,8 @@ export default new Vuex.Store({
         ...state.playlist[state.currentIndex]
       } || {}
       if (Song.mid) {
-        Song.url = `https://api.bzqll.com/music/tencent/url?id=${Song.mid}&key=579621905&br=320`
+        
+        Song.url = `https://v1.itooi.cn/tencent/url?id=${Song.mid}&quality=128`
       }
       return Song || {}
     }

@@ -70,7 +70,7 @@ export default {
     ...mapMutations(["setPlaylist", "setPlayingState", "setCurrentIndex"]),
     _getRecommendData() {
       getRecommendData().then(res => {
-        console.log(res.data);
+        console.log(res);
         let data = res.data;
         this.slider = data.slider;
         this.radioList = data.radioList;
@@ -79,8 +79,6 @@ export default {
     _getToplistsData() {
       getToplistsData().then(res => {
 		   let data = res.data;
-		  console.log(data)
-		 
 		  this.songList = data.topList
       });
     },
