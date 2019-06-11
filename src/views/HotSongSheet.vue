@@ -78,7 +78,9 @@
 		methods:{
 			_getHotSongSheet(){
 				let id=this.$route.query.id;
-				axios.get('./static/hotSongSheet.json').then((res)=>{
+			
+				axios.get('https://v1.itooi.cn/tencent/songList/category').then((res)=>{
+						console.log(res)
 					this.info = Object.assign({},res.data[id])
 				})
 			},
