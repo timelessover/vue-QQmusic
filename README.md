@@ -1,7 +1,13 @@
 # 基于Vue-cli3重写vue-QQmusic
 
 
-项目预览地址：[Vue-QQmusic](https://timelessover.github.io/blog-share-cli3/dist/index.html#/)  
+项目预览地址：[Vue-QQmusic](https://timelessover.github.io/vue-QQmusic/dist/index.html#/)
+
+
+二维码：
+
+
+![](https://upload-images.jianshu.io/upload_images/8562733-157172662bba93c3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
 
 ### 技术栈
@@ -13,7 +19,7 @@
  - mint-ui
  - vue-cli3
  - scss
- - jonsp(跨域)
+ - jsonp(跨域)
 
 <br/>
 
@@ -28,10 +34,8 @@
 <br/>
 
 ### 项目截图
-![首页]() 
-![注册登录页面])
+![播放器](https://upload-images.jianshu.io/upload_images/8562733-df2f215053cf04ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)![首页](https://upload-images.jianshu.io/upload_images/8562733-74adb508015b9db5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)![歌手](https://upload-images.jianshu.io/upload_images/8562733-65623bce6f18fa6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)![搜索](https://upload-images.jianshu.io/upload_images/8562733-9097bff9fd855c5f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
 
-![已登录页面]()
 
 <br/>
 
