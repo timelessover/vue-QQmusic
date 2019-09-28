@@ -6,6 +6,7 @@ import store from './store'
 //引入mint-ui
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
+import './assets/css/my-mint.css'
 
 Vue.use(MintUI)
 
